@@ -1,0 +1,131 @@
+
+
+
+
+main {
+   padding: var(--XL-spacer) var(--page-margin) var(--S-spacer) var(--page-margin);
+
+   display: flex;
+   flex-direction: column;
+
+   justify-content: space-between;
+   align-items: center;
+
+   width: 100%;
+   height: 100%;
+}
+
+.contact_info {
+   position: relative;
+
+   padding: 0;
+
+   display: flex;
+   flex-direction: column;
+
+   gap: var(--L-spacer);
+
+   width: 100%;
+}
+
+.contact_info p {
+
+   width: 20rem;
+
+   font-family: var(--font);
+   font-size: var(--body-font-size);
+}
+
+.contact_info p > a {
+   text-decoration: underline;
+}
+
+
+.contact_wordmark {
+   width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Groter dan Mobiel */
+@media screen and (min-width: 688px) {
+   main {
+      padding: var(--XL-spacer) var(--page-margin) var(--S-spacer) var(--page-margin);
+   
+      display: flex;
+      flex-direction: column;
+   
+      justify-content: space-between;
+      align-items: center;
+   
+      width: 100%;
+      height: 100%;
+   }
+   
+   .contact_info {
+      position: relative;
+   
+      padding: 0;
+   
+      display: flex;
+      flex-direction: row;
+   
+      gap: clamp(4rem, 8vw, 16rem);
+   
+      width: 100%;
+   }
+   
+   .contact_info p {
+   
+      width: 20rem;
+   
+      font-family: var(--font);
+      font-size: var(--body-font-size);
+   }
+   
+   .contact_info p > a {
+      text-decoration: underline;
+   }
+   
+   
+   .contact_wordmark {
+      width: 100%;
+   }
+ }
+
+
+/* Groter dan Tablet */
+ @media screen and (min-width: 992px) {
+
+ 
+
+ }
+
+ 
+/* Groter dan Desktop */
+ @media screen and (min-width: 1312px) {
+
+   body {
+      
+   }
+
+ }

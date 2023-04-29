@@ -1,0 +1,85 @@
+
+
+
+
+/* Css */
+
+
+
+
+/* Main */
+main {
+   overflow: hidden;
+
+   position: relative;
+
+   padding: 0 1.6rem;
+   padding-bottom: 1.6rem;
+
+   display: flex;
+   flex-direction: column;
+
+   justify-content: flex-end;
+   align-items: center;
+
+   height: 100%;
+}
+
+main figure {
+   width: 100%;
+}
+
+
+.raster {  
+   
+   overflow: hidden;
+   
+   position: fixed;
+   
+   top: 0;
+   right: 0;
+   
+   display: flex;
+   flex-wrap: wrap;
+   
+   height: 100%;
+   width: 100%;
+ }
+ 
+ .raster_item {
+   height: 60px;
+   width: 60px;
+   opacity: 0;
+   
+  transition: opacity 2s ease 0.4s;
+   
+   background-color: black;
+   border-radius: 0.1  rem;
+ }
+ 
+ .raster_item:hover {
+   opacity: 1;
+   transition: opacity 0.1s;
+ }
+
+
+
+
+
+
+/* Groter dan Mobiel */
+@media screen and (min-width: 688px) {
+ }
+
+
+/* Groter dan Tablet */
+ @media screen and (min-width: 992px) {
+ }
+
+/* Groter dan Desktop */
+ @media screen and (min-width: 1312px) {
+ }
+
+
+
+

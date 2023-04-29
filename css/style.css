@@ -1,0 +1,282 @@
+
+ .preload * {
+   -webkit-transition: none !important;
+   -moz-transition: none !important;
+   -ms-transition: none !important;
+   -o-transition: none !important;
+ }
+
+
+:root {
+   --page-margin: 1rem;
+
+   --border-radius: 0.5rem;
+
+
+   --S-spacer-mobile: 2rem;
+   --M-spacer-mobile: 4rem;
+   --L-spacer-mobile: 8rem;
+   --XL-spacer-mobile: 16rem;
+
+
+
+   /* --L-spacer: clamp(8rem, 9vw, 16rem); */
+   --XS-spacer: 1rem;
+   --S-spacer: 2rem;
+   --M-spacer: 4rem;
+   --L-spacer: 8rem;
+   --XL-spacer: 16rem;
+   --XXL-spacer: 32rem;
+
+   --border-color: #d2d2d2;
+
+
+   --body-background-color: #ffffff;
+
+   --font: helvetica;
+   --font-size: 1.6rem;
+
+
+   --body-font: helvetica;
+   --body-font-size: 1.6rem;
+
+
+   --nav-items-size: clamp(1.8rem, 2vw, 2rem);
+   --nav-items-color: #ffffff;
+
+   --nav-items-spacing: clamp(4rem, 8vw, 8rem);
+
+
+   --background-color: #ffffff;
+
+   --black: black;
+
+   --secondary-text-color: #a7a7a7;
+}
+
+
+html {
+   height: 100%;
+
+   font-size: 62.5%;
+}
+
+body {
+   height: 100%;
+
+   text-rendering: optimizeLegibility;
+
+   background-color: var(--background-color);
+}
+
+
+
+h1 {
+   font-family: var(--font);
+   font-size: clamp(4rem, 8vw, 18rem);
+}
+
+h2 {
+   font-family: var(--font);
+   font-size: clamp(4rem, 5vw, 8rem);
+}
+
+h3 {
+   font-family: var(--font);
+   font-size: clamp(4rem, 5vw, 8rem);
+}
+
+h4 {
+   font-family: var(--font);
+   font-size: 1.6rem;
+}
+
+
+
+
+
+
+
+nav {
+   z-index: 95;
+
+   position: fixed;
+
+   padding: var(--page-margin);
+
+   width: 100%;
+
+   display: flex;
+   flex-direction: row;
+
+   justify-content: space-between;
+   align-items: center;
+
+   mix-blend-mode: difference;
+}
+
+nav ul {
+   display: flex;
+   flex-direction: row;
+
+   gap: var(--nav-items-spacing);
+}
+
+nav ul li a {
+   font-family: var(--font);
+   font-size: var(--nav-items-size);
+   font-weight: 400;
+
+   color: var(--nav-items-color);
+}
+
+
+
+
+
+
+
+
+
+footer {
+   padding: 0 var(--page-margin) var(--S-spacer) var(--page-margin);
+
+   display: flex;
+   flex-direction: column;
+
+/* width: 100vw; */
+}
+
+footer ul {
+   display: grid;
+
+   grid-template-columns: repeat(4, 1fr);
+   grid-column-gap: 1rem;
+}
+
+footer ul:nth-of-type(1) {
+   padding-bottom: var(--S-spacer);
+}
+
+footer ul:nth-of-type(2) {
+padding-top: 2rem;
+}
+
+
+footer ul li {
+   font-family: var(--font);
+   font-size: 1.6rem;
+}
+
+footer ul li {
+   grid-column: span 2;
+}
+
+footer ul:nth-of-type(1) li:nth-of-type(1) {
+   grid-column: 1 / span 2;
+}
+
+footer ul:nth-of-type(1) li:nth-of-type(2) {
+   grid-column: 3 / span 2;
+}
+
+
+footer ul:nth-of-type(2) li:nth-of-type(1) {
+   grid-column: 1 / span 2;
+}
+
+footer ul:nth-of-type(2) li:nth-of-type(2) {
+   grid-column: 3 / span 2;
+}
+
+footer ul li a {
+   text-decoration: underline;
+}
+
+
+
+
+
+
+
+/* Groter dan Mobiel */
+@media screen and (min-width: 688px) {
+   body {
+   }
+ }
+
+
+/* Groter dan Tablet */
+ @media screen and (min-width: 992px) {
+   body {
+   }
+ }
+
+/* Groter dan Desktop */
+ @media screen and (min-width: 1312px) {
+   footer {
+      padding-bottom: 1.6rem;
+   
+      display: flex;
+      flex-direction: column;
+
+      /* width: 100vw; */
+
+   }
+   
+   footer ul {
+      display: grid;
+   
+      grid-template-columns: repeat(12, 1fr);
+      grid-column-gap: 1rem;
+   }
+   
+   footer ul:nth-of-type(1) {
+      padding-bottom: var(--M-spacer);
+   }
+   
+   footer ul:nth-of-type(2) {
+      padding-top: var(--M-spacer);
+   }
+   
+   
+   footer ul li {
+      font-family: var(--font);
+      font-size: 1.6rem;
+   }
+   
+   footer ul li {
+      max-width: 18rem;
+
+      grid-column: span 2;
+   }
+   
+   footer ul:nth-of-type(1) li:nth-of-type(1) {
+      grid-column: 1 / span 2;
+   }
+   
+   footer ul:nth-of-type(1) li:nth-of-type(2) {
+      grid-column: span 2;;
+   }
+   
+   
+   footer ul:nth-of-type(2) li:nth-of-type(1) {
+      grid-column: 8 / span 2;
+
+      justify-self: end;
+   }
+   
+   footer ul:nth-of-type(2) li:nth-of-type(2) {
+      grid-column: 11 / span 2;
+
+      justify-self: end;
+   }
+   
+   footer ul li a {
+      text-decoration: underline;
+   }
+ }
+
+
+
+

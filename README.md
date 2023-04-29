@@ -1,2 +1,2 @@
-# portfolio
-Dit is mijn portfolio
+# Sammi
+Portfolio Sammi =)
